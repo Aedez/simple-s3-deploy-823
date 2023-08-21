@@ -1,0 +1,120 @@
+<!-- chatgpt generated static webpage for simplicity -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .project-card {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card:hover {
+            transform: scale(1.03);
+            transition: transform 0.3s ease;
+        }
+
+        .review {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .review:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Michael's Portfolio</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Description of Project 1...</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Description of Project 2...</p>
+            </div>
+            <!-- Add more project cards as needed -->
+        </section>
+
+        <section>
+            <h2>Reviews</h2>
+            <div class="review">
+                <h3>Review 1</h3>
+                <p>"Michael's work is outstanding! Highly recommended."</p>
+            </div>
+            <div class="review">
+                <h3>Review 2</h3>
+                <p>"I was impressed by Michael's attention to detail. Great job!"</p>
+            </div>
+            <!-- Add more review elements as needed -->
+        </section>
+
+        <section>
+            <h2>About Me</h2>
+            <!-- Replace the image URL with the S3 bucket URL -->
+            <img class="profile-image" src="https://mnkterraformwebsite823.s3.amazonaws.com/profile.png" alt="Profile Image">
+            <p>Hi, I'm Michael! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget venenatis justo.
+                Morbi pharetra nisi ac leo pellentesque cursus.</p>
+        </section>
+    </main>
+</body>
+
+</html>
